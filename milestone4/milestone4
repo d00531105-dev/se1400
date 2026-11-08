@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="noindex, nofollow">
+        <title>SE1400 Grid Mockup</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div>
+             <div class="adult">
+                <div class="nav">
+                    <p></p>
+                </div>
+
+             </div>
+        </header>
+        <section>
+        <div class="adult">
+            <div class="hero_image">
+                <p></p>
+            </div>
+        </div>
+        </section>
+        <article>
+            <div class="adult">
+                <div class="main">
+                    <p></p>
+                </div>
+            </div>
+        </article>
+        <footer>
+            <div class="adult">
+                <div class="bottom">
+                    <p></p>
+                </div>
+        </footer>
+    </body>
+</html>
