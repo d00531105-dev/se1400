@@ -1,11 +1,11 @@
 .adult {
     display: grid;
-    grid-template-columns: minmax(0px, 1fr) repeat(6,minmax(0,175px)) minmax(0px, 1fr);
+    grid-template-columns: /*minmax(0px, 1fr) repeat(6,minmax(0,175px)) minmax(0px, 1fr)*/ repeat(12,minmax(0, 1fr));
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
 nav {
-    grid-area: 1 /2 / 2 / 8; 
+    grid-area: 1 /1 / 2 / 13; 
     background-color: rgba(1, 34, 7, 0.3);
     height: 50px;
     padding: 0;
@@ -26,30 +26,28 @@ nav {
     
 }
 .hero_image{
-    grid-area: 1/2/2/8;
+    grid-area: 1/1/2/13;
     height: 400px;
     margin-top: -100px;
     padding: 0;
     margin: 0;
+    width: 100%;
     z-index: 1;
     background-image: url("./hero.jpg");
     background-size: cover;
     background-position: center;
 }
 .main{
-    grid-area: 1/3/2/7;
+    width: full;
+    grid-area: 2/2/2/12;
     background-color: #FCF2DD;
-    height: 450px;
+    height: 550px;
     padding: 0;
     margin: 0;
 }
-.bottom{
-    grid-area: 1/2/2/8;
-    background-color: #c44931;
-    height: 100px;
-    padding: 0;
-    margin: 0;
-}
+
+
+
 .content{
 
     list-style-type: none;
@@ -60,7 +58,7 @@ nav {
     padding: 20px;
     margin-bottom: 25px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px;
+    grid-template-rows: 200px;
     grid-auto-rows: 40px;
     & .cedar {
         object-fit: cover;
@@ -79,7 +77,7 @@ nav {
         min-height: 0;
     }
     & p {
-        font-size: 10px;
+        font-size: clamp(10px, 1vw, 30px);
     }
 }
 
@@ -94,6 +92,11 @@ nav {
     object-fit: cover;
 }
 
+.archcontainer {
+    display: grid;
+    grid-template-columns: 1fr 20fr 1fr;
+}
+
 .arches {
     object-fit: cover;
     display: block;
@@ -101,11 +104,11 @@ nav {
     min-height: 0;
     size: cover;
     position: center;
-    width: 94%;
-    height: 100px;
+    width: 100%;
+    height: 130px;
     padding-top: 0px;
     margin-top: 0px;
-    margin-left: 20px;
+    /*margin-left: 20px;*/
 }
 
 .arches picture {
@@ -125,7 +128,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 8px;
+    font-size: clamp(8px, 1vw, 10px);
 }
 aside{
     background-color: #c44931;
@@ -137,6 +140,7 @@ body {
     margin: 0;
     background-color: #c44931;
 }
+
 /*
 @media (min-width: 768px) {
 
