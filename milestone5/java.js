@@ -7,10 +7,16 @@ function menu() {
         x = false
     }
     if (x === true) {
-        var el = document.querySelector(".drop")
-        console.lo(el)
-    }
+        var el = document.querySelector("nav ul")
+        console.log(el)
+        el.classList.replace('drop', 'dropped')
     
+
+    }   else {
+        var el = document.querySelector("nav ul")
+        console.log(el)
+        el.classList.replace('dropped', 'drop')
+    }
 
     
 
