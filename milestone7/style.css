@@ -135,13 +135,16 @@ nav {
     justify-content: center;
     font-size: clamp(6px, 1.5vw, 20px);
     gap: 8px;
+    padding: 8px;
 }
 .paragaphs2 {
     list-style-type: none;
     text-decoration: none;
     display: flex;
     align-items: center;
+    padding: 8px;
     justify-content: center;
+    gap: 8px;
     font-size: clamp(8px, 1.5vw, 40px);
 }
 aside{
@@ -187,7 +190,7 @@ body {
             }
         }
     .main {
-        height: 900px;
+        height: 980px;
     }
     .main2 {
         height: 1350px;
@@ -232,7 +235,7 @@ body {
 
 @media (max-width: 992px) {
     .paragaphs {
-    font-size: clamp(6px, 1vw, 8px);
+    font-size: clamp(6px, 2vw, 12px);
     }
 }
 
